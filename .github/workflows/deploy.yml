@@ -7,10 +7,6 @@ jobs:
     name: deploy
     runs-on: ubuntu-latest
     steps:
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: 3.８
     - uses: actions/checkout@v2
     - name: configure aws
       uses: aws-actions/configure-aws-credentials@v1
