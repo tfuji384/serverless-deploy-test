@@ -8,6 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+    - name: setup Node.js
+      ​uses: actions/setup-node@v1
     - name: configure aws
       uses: aws-actions/configure-aws-credentials@v1
       with:
